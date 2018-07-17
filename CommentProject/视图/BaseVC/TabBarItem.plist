@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>classNavigationTitle</key>
+		<string>首页</string>
+		<key>classClass</key>
+		<string>HomePageVC</string>
+		<key>classImageName</key>
+		<string>home-gray</string>
+		<key>classSelectedImageName</key>
+		<string>home-blue</string>
+	</dict>
+	<dict>
+		<key>classNavigationTitle</key>
+		<string>资讯</string>
+		<key>classClass</key>
+		<string>InformationsVC</string>
+		<key>classImageName</key>
+		<string>News-gray</string>
+		<key>classSelectedImageName</key>
+		<string>News-blue</string>
+	</dict>
+	<dict>
+		<key>classNavigationTitle</key>
+		<string>攻略</string>
+		<key>classClass</key>
+		<string>InformationsVC</string>
+		<key>classImageName</key>
+		<string>Raiders_gray</string>
+		<key>classSelectedImageName</key>
+		<string>Raiders_blue</string>
+	</dict>
+	<dict>
+		<key>classNavigationTitle</key>
+		<string>订单</string>
+		<key>classClass</key>
+		<string>YLBOrderListVC</string>
+		<key>classImageName</key>
+		<string>order_gray</string>
+		<key>classSelectedImageName</key>
+		<string>order_blue</string>
+	</dict>
+	<dict>
+		<key>classNavigationTitle</key>
+		<string>我的</string>
+		<key>classClass</key>
+		<string>UserCenterVC</string>
+		<key>classImageName</key>
+		<string>centre-gray</string>
+		<key>classSelectedImageName</key>
+		<string>centre-blue</string>
+	</dict>
+</array>
+</plist>
