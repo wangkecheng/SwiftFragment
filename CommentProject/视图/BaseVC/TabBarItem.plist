@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>classNavigationTitle</key>
-		<string>首页</string>
+		<string>闭包</string>
 		<key>classClass</key>
-		<string>HomePageVC</string>
+		<string>MSHomeVC</string>
 		<key>classImageName</key>
 		<string>home-gray</string>
 		<key>classSelectedImageName</key>
@@ -14,43 +14,33 @@
 	</dict>
 	<dict>
 		<key>classNavigationTitle</key>
-		<string>资讯</string>
+		<string>Toast_Sheet</string>
 		<key>classClass</key>
-		<string>InformationsVC</string>
+		<string>MSInfomationVC</string>
 		<key>classImageName</key>
-		<string>News-gray</string>
+		<string>home-gray</string>
 		<key>classSelectedImageName</key>
-		<string>News-blue</string>
+		<string>home-blue</string>
 	</dict>
 	<dict>
 		<key>classNavigationTitle</key>
-		<string>攻略</string>
+		<string>版本更新</string>
 		<key>classClass</key>
-		<string>InformationsVC</string>
+		<string>MSTripVC</string>
 		<key>classImageName</key>
-		<string>Raiders_gray</string>
+		<string>home-gray</string>
 		<key>classSelectedImageName</key>
-		<string>Raiders_blue</string>
+		<string>home-blue</string>
 	</dict>
 	<dict>
 		<key>classNavigationTitle</key>
-		<string>订单</string>
+		<string>网络请求</string>
 		<key>classClass</key>
-		<string>YLBOrderListVC</string>
+		<string>MSMyselfVC</string>
 		<key>classImageName</key>
-		<string>order_gray</string>
+		<string>home-gray</string>
 		<key>classSelectedImageName</key>
-		<string>order_blue</string>
-	</dict>
-	<dict>
-		<key>classNavigationTitle</key>
-		<string>我的</string>
-		<key>classClass</key>
-		<string>UserCenterVC</string>
-		<key>classImageName</key>
-		<string>centre-gray</string>
-		<key>classSelectedImageName</key>
-		<string>centre-blue</string>
+		<string>home-blue</string>
 	</dict>
 </array>
 </plist>

@@ -7,29 +7,33 @@
 //
 
 import UIKit
-
+ 
 class HQBaseVC: UIViewController {
-
+     
+    let isHideSuperBack:Bool? = false //隐藏返回按钮
+    let isHideSuperBackAction:Bool? = false ;//隐藏返回按钮的响应方法
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColorFromRGB(R: 245, G: 245, B: 245)
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isHidden = false
     }
-    */
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let navigationBar:UINavigationBar? = self.navigationController?.navigationBar
+        navigationBar?.setBackgroundImage(ImageWithColor(color: UIColor.clear), for: UIBarPosition.bottom, barMetrics: UIBarMetrics.compactPrompt)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
 }
+

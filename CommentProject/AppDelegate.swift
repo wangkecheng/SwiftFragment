@@ -6,16 +6,23 @@
 //  Copyright © 2018 王帅. All rights reserved.
 //
 
-import UIKit
-
+import UIKit 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+ 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+         self.window = UIWindow.init(frame: CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: CGSize.init(width:SCREEN_WIDTH, height:SCREEN_HEIGHT)))
+         self.window?.makeKeyAndVisible()
+        if !HQGuideVC.hadLoaded(){
+            let VC = HQGuideVC.loadWithBlock {[unowned self] (isFinish:Bool) in
+                self.window?.rootViewController = HQMainTBC()
+            }
+             self.window?.rootViewController = VC//第一次进入会走这里
+        }else{
+            self.window?.rootViewController = HQMainTBC()
+        }
         return true
     }
 

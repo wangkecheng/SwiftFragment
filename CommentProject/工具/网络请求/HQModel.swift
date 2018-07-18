@@ -7,7 +7,14 @@
 //
 
 import UIKit
+import HandyJSON
+class HQModel: HandyJSON{
 
-class HQModel: NSObject {
-
+    var username: String?
+    var age:  String?
+    //必须实现
+    required init() {
+        
+    }
 }
+
